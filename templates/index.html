@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Finance Assistant</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>💰 AI Finance Assistant</h2>
+
+<form method="POST">
+
+<textarea
+name="query"
+rows="6"
+placeholder="Ask about budgeting, expenses, savings..."
+required></textarea>
+
+<br>
+
+<button type="submit">Get Advice</button>
+
+</form>
+
+{% if answer %}
+
+<h3>📊 AI Financial Suggestion</h3>
+
+<pre>{{answer}}</pre>
+
+{% endif %}
+
+<p class="note">
+⚠️ This tool provides general financial information only and is not investment, tax, or legal advice.
+</p>
+
+</div>
+
+</body>
+
+</html>
